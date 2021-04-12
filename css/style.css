@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+top-header {
+  display: block;
+  background-image: url(../images/gray-surface-450055.jpg);
+  background-size: cover;
+  width: 100%;
+}
+top-header .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+top-header .container .row .txt-row {
+  width: 50%;
+  font-size: 16px;
+  color: white;
+}
+top-header .container .row .media-row {
+  width: 50%;
+  text-align: right;
+  margin-left: 10px;
+  color: white;
+}
+top-header .container .row .media-row ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+bot-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+bot-header .container .logo-header {
+  width: 25%;
+  font-size: 35px;
+  font-weight: 600;
+}
+bot-header .container .menu-header {
+  width: 50%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+bot-header .container .menu-header ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+bot-header .container .menu-header ul li:hover {
+  color: #ff6f61;
+}
+bot-header .container .media-header {
+  width: 25%;
+  text-align: right;
+  font-size: 16px;
+}
+bot-header .container .media-header ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.banner .item {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.banner .item div {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.banner .item div p {
+  font-size: 60px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.banner .item div a {
+  background-color: #fff;
+  color: #000;
+  text-transform: capitalize;
+  padding: 8px 15px;
+}
+.banner .item div a:hover {
+  background: #ff6f61;
+  transition: all .4s ease;
+  color: white;
+}
+.banner .item:first-child {
+  background: rgba(0, 0, 0, 0.3) url(../images/cover-1.jpg);
+  background-size: cover;
+  background-blend-mode: color;
+}
+.banner .item:nth-child(even) {
+  background: rgba(0, 0, 0, 0.3) url(../images/cover-2.jpg);
+  background-size: cover;
+  background-blend-mode: color;
+}
+.banner .item:last-child {
+  background: rgba(0, 0, 0, 0.3) url(../images/cover-3.jpg);
+  background-size: cover;
+  background-blend-mode: color;
+}
+
+.bot-banner {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 25px;
+}
+.bot-banner .item {
+  display: flex;
+  justify-content: space-between;
+}
+.bot-banner .item div i {
+  color: #ff6f61;
+  font-size: 20px;
+  padding-top: 2px;
+}
+.bot-banner .item .text-item {
+  padding-left: 10px;
+}
+.bot-banner .item .text-item h1 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main .best-picks {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+main .best-picks h1 {
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+main .products-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .products-1 .item {
+  height: 35vh;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+main .products-1 .item:hover div p {
+  margin-left: 20px;
+}
+main .products-1 .item:first-child {
+  background: url(../images/product-1.jpg);
+  background-size: cover;
+  width: 30%;
+}
+main .products-1 .item:nth-child(2) {
+  background: url(../images/product-2.jpg);
+  background-size: cover;
+  width: 68%;
+}
+main .products-1 .item:nth-child(3) {
+  background: url(../images/product-3.jpg);
+  background-size: cover;
+  width: 68%;
+}
+main .products-1 .item:last-child {
+  background: url(../images/product-4.jpg);
+  background-size: cover;
+  width: 30%;
+}
+main .products-1 .item div {
+  width: 100%;
+  text-align: center;
+}
+main .products-1 .item .item-1 p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  transition: all .4s ease;
+}
+main .products-1 .item .item-2 p {
+  color: #545454;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 30px;
+  transition: all .4s ease;
+}
+main .top-month {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+main .selector {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+main .selector .item {
+  width: 18%;
+  margin: 0;
+}
+main .selector .item select {
+  border: none;
+  background: #fff;
+  height: 35px;
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+main .selector .item button {
+  border: none;
+  background: #ff6f61;
+  color: white;
+  font-size: 16px;
+  border-radius: 50px;
+  height: 35px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+}
+main .listProduct {
+  margin-top: 30px;
+  display: block;
+}
+main .listProduct .__listProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+main .listProduct .__listProduct .item {
+  margin-top: 30px;
+}
+main .listProduct .__listProduct .item .image {
+  position: relative;
+  overflow: hidden;
+}
+main .listProduct .__listProduct .item .image:hover .netWork {
+  bottom: 0;
+}
+main .listProduct .__listProduct .item .image .netWork {
+  width: 100%;
+  position: absolute;
+  bottom: -95px;
+  text-align: center;
+  padding: 20px 0;
+  transition: all .4s ease;
+}
+main .listProduct .__listProduct .item .image .netWork a {
+  padding: 0 5px;
+}
+main .listProduct .__listProduct .item .image .netWork a i {
+  background: white;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 0;
+}
+main .listProduct .__listProduct .item h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+main .listProduct .__listProduct .item h2 {
+  margin-top: 5px;
+  font-size: 16px;
+}
+main .news {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+main .__news {
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+}
+main .content-news {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 50px;
+}
+main .content-news .item {
+  display: flex;
+  justify-content: space-between;
+}
+main .content-news .item .left {
+  width: 80px;
+}
+main .content-news .item .left .date {
+  background: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+main .content-news .item .left .date p {
+  font-size: 50px;
+}
+main .content-news .item .left .share {
+  background: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+  position: relative;
+}
+main .content-news .item .left .share:hover .media {
+  left: 100%;
+  opacity: 1;
+  visibility: inherit;
+}
+main .content-news .item .left .share .media {
+  position: absolute;
+  top: 0;
+  left: 120%;
+  background: #ff6f61;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+main .content-news .item .left .share .media a {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  border-left: 1px dashed rgba(0, 0, 0, 0.25);
+}
+main .content-news .item .left .share .media a i {
+  padding-top: 7px;
+}
+main .content-news .item .right {
+  width: calc(100% - 100px);
+}
+main .content-news .item .right .text {
+  padding: 15px 0;
+}
+main .content-news .item .right .text a {
+  font-size: 25px;
+  font-weight: 500;
+}
+main .content-news .item .right img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+footer .bot-footer {
+  background: #000;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer .item {
+  width: 20%;
+}
+footer .footer .item .title {
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+footer .footer .item ul li {
+  list-style: none;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+footer .footer .item ul li:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
